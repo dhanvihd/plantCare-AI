@@ -1,0 +1,14 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+dataset/
+*.zip
+node_modules/
+**/node_modules/
+**/build/
+**/.gradle/
+.gradle/
+.idea/
+.vscode/
+.DS_Store

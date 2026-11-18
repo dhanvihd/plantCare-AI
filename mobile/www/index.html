@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101c17">
+    <meta name="description" content="PlantCare AI - Intelligent plant disease detection and plant health analysis.">
+    <title>PlantCare AI | Intelligent Plant Health</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./static/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="#" class="brand">
+            <div class="brand-icon">
+                <i data-lucide="sprout"></i>
+            </div>
+            <div>
+                <span class="brand-name">plantcare<span>ai.</span></span>
+                <small>INTELLIGENCE FOR NATURE</small>
+            </div>
+        </a>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="nav-menu">
+            <a href="#overview" class="nav-item active">
+                <i data-lucide="layout-dashboard"></i>
+                Overview
+            </a>
+
+            <a href="#scanner" class="nav-item">
+                <i data-lucide="scan-line"></i>
+                Disease scanner
+            </a>
+
+            <a href="#insights" class="nav-item">
+                <i data-lucide="chart-no-axes-combined"></i>
+                AI intelligence
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="model-card">
+                <div class="model-card-top">
+                    <span class="status-dot"></span>
+                    <span>AI ENGINE ONLINE</span>
+                </div>
+
+                <h3>Plant recognition</h3>
+                <p>Powered by a deep learning model trained across 38 plant health categories.</p>
+
+                <div class="model-count">38 <span>categories</span></div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="avatar">PC</div>
+                <div>
+                    <strong>PlantCare Studio</strong>
+                    <small>Personal workspace</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="overview">
+
+        <header class="topbar">
+            <div class="breadcrumb">WORKSPACE <span>/</span> OVERVIEW</div>
+
+            <div class="topbar-right">
+                <div class="live-status">
+                    <span class="status-dot"></span>
+                    AI system active
+                </div>
+
+                <div class="topbar-date" id="currentDate">
+                    PLANT HEALTH INTELLIGENCE
+                </div>
+            </div>
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-line"></span>
+                    THE FUTURE OF PLANT HEALTH
+                </div>
+
+                <h1>
+                    Nature has a language.<br>
+                    <em>We help you understand it.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Discover the health of your plants through intelligent
+                    image recognition. Detect potential diseases, understand
+                    your crops and make more informed decisions.
+                </p>
+
+                <a href="#scanner" class="primary-button">
+                    Analyse a leaf
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+                <div class="hero-caption">
+                    <i data-lucide="shield-check"></i>
+                    AI-powered plant health analysis
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-overlay"></div>
+
+                <div class="image-caption">
+                    <span>01 — BOTANICAL INTELLIGENCE</span>
+                    <span>OBSERVE. UNDERSTAND. GROW.</span>
+                </div>
+            </div>
+
+            <div class="hero-number">01</div>
+
+        </section>
+
+
+        <!-- OVERVIEW METRICS -->
+        <section class="metrics-section" id="insights">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">AT A GLANCE</span>
+                    <h2>Your intelligence centre</h2>
+                </div>
+
+                <span class="section-note">MODEL OVERVIEW</span>
+            </div>
+
+            <div class="metrics-grid">
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>DISEASE CATEGORIES</span>
+                        <i data-lucide="layers"></i>
+                    </div>
+
+                    <div class="metric-value">38</div>
+                    <p>Recognisable plant health categories</p>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>MODEL ARCHITECTURE</span>
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+
+                    <div class="metric-value metric-text">MobileNetV2</div>
+                    <p>Deep learning image classification</p>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>VALIDATION ACCURACY</span>
+                        <i data-lucide="target"></i>
+                    </div>
+
+                    <div class="metric-value">
+                        92.66<span class="metric-unit">%</span>
+                    </div>
+
+                    <p>Held-out PlantVillage validation set</p>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>MODEL STATUS</span>
+                        <i data-lucide="activity"></i>
+                    </div>
+
+                    <div class="metric-value status-value">
+                        <span class="status-dot"></span> Online
+                    </div>
+
+                    <p>Ready to analyse your leaf images</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SCANNER -->
+        <section class="scanner-section" id="scanner">
+
+            <div class="scanner-heading">
+                <div>
+                    <span class="section-kicker">THE AI LABORATORY</span>
+                    <h2>Let's look closer.</h2>
+                    <p>Upload a leaf photograph and let our AI examine it.</p>
+                </div>
+
+                <div class="scanner-index">02 / SCAN</div>
+            </div>
+
+
+            <div class="scanner-layout">
+
+                <!-- IMAGE UPLOAD PANEL -->
+                <div class="upload-panel">
+
+                    <div class="upload-panel-top">
+                        <span>IMAGE ANALYSIS</span>
+                        <span class="upload-format">JPG · JPEG · PNG</span>
+                    </div>
+
+
+                    <div class="upload-zone" id="uploadZone">
+
+                        <input
+                            type="file"
+                            id="leafInput"
+                            accept="image/*"
+                            capture="environment"
+                            hidden
+                        >
+
+                        <div class="upload-icon">
+                            <i data-lucide="scan-search"></i>
+                        </div>
+
+                        <h3>Bring your leaf into focus.</h3>
+
+                        <p>Drop your image here, or browse your device.</p>
+
+                        <button class="secondary-button" id="browseButton">
+                            <i data-lucide="image-plus"></i>
+                            Choose an image
+                        </button>
+
+                        <span class="upload-hint">
+                            For best results, use a clear, well-lit leaf photograph.
+                        </span>
+
+                    </div>
+
+
+                    <!-- IMAGE PREVIEW -->
+                    <div class="preview-container" id="previewContainer" hidden>
+
+                        <img
+                            id="leafPreview"
+                            src=""
+                            alt="Selected leaf preview"
+                        >
+
+                        <button
+                            id="removeImage"
+                            class="remove-image"
+                            aria-label="Remove image"
+                        >
+                            <i data-lucide="x"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="upload-actions">
+
+                        <span id="fileName">No image selected</span>
+
+                        <button
+                            class="analyse-button"
+                            id="analyseButton"
+                            disabled
+                        >
+                            Analyse leaf
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULTS PANEL -->
+                <div class="results-panel">
+
+                    <div class="results-top">
+                        <span>ANALYSIS REPORT</span>
+                        <i data-lucide="scan"></i>
+                    </div>
+
+
+                    <!-- EMPTY RESULT -->
+                    <div class="result-empty" id="emptyResult">
+
+                        <div class="result-decoration">
+                            <i data-lucide="leaf"></i>
+                        </div>
+
+                        <h3>Your results will appear here.</h3>
+
+                        <p>
+                            Upload a leaf image to begin your plant health analysis.
+                        </p>
+
+                        <div class="result-line"></div>
+
+                        <span>AWAITING IMAGE INPUT</span>
+
+                    </div>
+
+
+                    <!-- LOADING RESULT -->
+                    <div class="loading-result" id="loadingResult" hidden>
+
+                        <div class="loader"></div>
+
+                        <h3>Examining your leaf...</h3>
+
+                        <p>Our AI model is analysing the image.</p>
+
+                    </div>
+
+
+                    <!-- ACTUAL RESULT -->
+                    <div class="actual-result" id="actualResult" hidden>
+
+                        <span class="result-label">PREDICTED CROP</span>
+
+                        <h3 id="resultCrop">—</h3>
+
+
+                        <span class="result-label">DETECTED CONDITION</span>
+
+                        <h2 id="resultDisease">—</h2>
+
+
+                        <!-- CONFIDENCE -->
+                        <div class="confidence-block">
+
+                            <div class="confidence-header">
+                                <span>MODEL CONFIDENCE</span>
+                                <strong id="confidenceValue">—</strong>
+                            </div>
+
+                            <div class="confidence-track">
+                                <div
+                                    class="confidence-fill"
+                                    id="confidenceFill"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <p class="result-disclaimer">
+                            This is an AI-generated prediction, not a confirmed
+                            plant diagnosis. Verify results before taking action.
+                        </p>
+
+
+                        <!-- PLANT HEALTH CARE GUIDE -->
+                        <div class="care-guide" id="careGuide">
+
+                            <div class="care-guide-header">
+
+                                <div class="care-guide-icon">
+                                    <i data-lucide="sprout"></i>
+                                </div>
+
+                                <div>
+                                    <span class="section-kicker">
+                                        YOUR PLANT HEALTH ASSISTANT
+                                    </span>
+
+                                    <h3>Plant Health Care Guide</h3>
+
+                                    <p>
+                                        Understand the detected condition
+                                        and explore suggested care.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="care-guide-content">
+
+                                <!-- SYMPTOMS -->
+                                <div class="care-item">
+
+                                    <div class="care-item-heading">
+                                        <i data-lucide="eye"></i>
+                                        <h4>Symptoms</h4>
+                                    </div>
+
+                                    <p id="careSymptoms">
+                                        Disease symptoms will appear here after analysis.
+                                    </p>
+
+                                </div>
+
+
+                                <!-- DISEASE INFORMATION -->
+                                <div class="care-item">
+
+                                    <div class="care-item-heading">
+                                        <i data-lucide="microscope"></i>
+                                        <h4>About the Disease</h4>
+                                    </div>
+
+                                    <p id="careAbout">
+                                        Disease information will appear here after analysis.
+                                    </p>
+
+                                </div>
+
+
+                                <!-- TREATMENT -->
+                                <div class="care-item">
+
+                                    <div class="care-item-heading">
+                                        <i data-lucide="heart-pulse"></i>
+                                        <h4>Recommended Treatment</h4>
+                                    </div>
+
+                                    <p id="careTreatment">
+                                        Treatment guidance will appear here after analysis.
+                                    </p>
+
+                                </div>
+
+
+                                <!-- PREVENTION -->
+                                <div class="care-item">
+
+                                    <div class="care-item-heading">
+                                        <i data-lucide="shield-check"></i>
+                                        <h4>Prevention Tips</h4>
+                                    </div>
+
+                                    <p id="carePrevention">
+                                        Prevention guidance will appear here after analysis.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="care-disclaimer">
+                                <i data-lucide="info"></i>
+
+                                <p>
+                                    Care suggestions are general guidance.
+                                    AI predictions may be incorrect.
+                                    Confirm the disease before applying
+                                    treatments or pesticides, and follow
+                                    local agricultural recommendations.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOW CONFIDENCE / ERROR RESULT -->
+                    <div class="error-result" id="errorResult" hidden>
+
+                        <i data-lucide="alert-circle"></i>
+
+                        <h3>Analysis unavailable</h3>
+
+                        <p id="errorMessage">
+                            Something went wrong. Please try again.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+
+            <a href="#" class="footer-brand">
+                plantcare<span>ai.</span>
+            </a>
+
+            <span>INTELLIGENCE ROOTED IN NATURE.</span>
+
+            <span>© 2026 PLANTCARE AI</span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="./static/app.js"></script>
+
+<script>
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+</script>
+
+</body>
+</html>
